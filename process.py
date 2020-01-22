@@ -1,15 +1,16 @@
+#author: Ahmad Zafar Khan
+#date: 22.01.2020
+
 import glob, os
 
-# Current directory
-current_dir = os.path.dirname(os.path.abspath(__file__))
-# Directory where the data will reside, relative to 'darknet.exe'
-path_data = '/data-and-labels'
+
+current_dir = os.path.dirname(os.path.abspath(__file__)) # Current directory
+
+path_data = '/data-and-labels' # directory of dataset
 # path_data = input("enter path: ")
 
-# Percentage of images to be used for the test set
-percentage_test = 10;
+percentage_test = 10; # set train test split here
 
-# Create and/or truncate train.txt and test.txt
 file_train = open('temp-train.txt', 'w')
 file_test = open('temp-test.txt', 'w')
 
